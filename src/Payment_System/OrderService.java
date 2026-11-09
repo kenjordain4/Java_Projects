@@ -1,4 +1,4 @@
-package ATM;
+package Payment_System;
 
 public class OrderService {
     private PaymentService paymentService;

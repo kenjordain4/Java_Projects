@@ -10,7 +10,7 @@ A Java project that simulates different payment methods (credit card, PayPal, cr
 - `PaypalPayment`: extends `Payment` and implements `PaymentService`. Pays with PayPal and sends a receipt.
 - `CryptoPayment`: extends `Payment` and implements `PaymentService`. Pays with crypto and verifies the blockchain.
 - `OrderService`: processes an order using any object that implements `PaymentService`.
-- `Atm_main`: main class that creates the different payments and runs them.
+- `Main`: main class that creates the different payments and runs them.
 
 ## How it works
 
@@ -20,13 +20,13 @@ A Java project that simulates different payment methods (credit card, PayPal, cr
 ## How to run
 
 1. Open the project in an IDE such as IntelliJ IDEA.
-2. Run the `main` method in `Atm_main`.
+2. Run the `main` method in `Main`.
 
 Or from the terminal, in the folder that contains the `ATM` package:
 
 ```
-javac ATM/*.java
-java ATM.Atm_main
+javac Payment_System/*.java
+java ATM.Main
 ```
 
 ## Concepts practiced

@@ -1,6 +1,6 @@
-package Payment_system;
+package Payment_System;
 
-public class Atm_main {
+public class Main {
     public static void main(String[] args){
         var p1=new CreditCardPayment();
         var p2=new PaypalPayment();

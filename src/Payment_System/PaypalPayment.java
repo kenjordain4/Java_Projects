@@ -1,4 +1,4 @@
-package ATM;
+package Payment_System;
 
 public class PaypalPayment extends Payment implements PaymentService {
     @Override
