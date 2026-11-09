@@ -1,8 +1,8 @@
-package mortgage_calculator;
+package Mortgage_calculator;
 
 import java.util.Scanner;
 
-public class mortgage_console {
+public class Mortgage_Console {
     private static Scanner scanner = new Scanner(System.in);
 
     public static double readNumber(String prompt){

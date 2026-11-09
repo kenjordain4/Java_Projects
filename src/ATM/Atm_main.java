@@ -2,8 +2,8 @@ package ATM;
 
 public class Atm_main {
     public static void main(String[] args){
-        var p1=new creditCardPayment();
-        var p2=new paypalPayment();
+        var p1=new CreditCardPayment();
+        var p2=new PaypalPayment();
         Process(p1);
         System.out.println("");
         Process(p2);
@@ -13,10 +13,10 @@ public class Atm_main {
         p1.render();
         System.out.println("");
         p2.render();
-        var p4 =new cryptoPayment();
+        var p4 =new CryptoPayment();
         Process(p4);
         System.out.println("=============================================");
-        var  test=new cryptoPayment();
+        var  test=new CryptoPayment();
         var ord= new OrderService(test);
         ord.processOrder();
 

@@ -1,6 +1,6 @@
 package ATM;
 
-public class paypalPayment extends Payment implements PaymentService {
+public class PaypalPayment extends Payment implements PaymentService {
     @Override
     public void pay() {
         System.out.println("Paying with Paypal");

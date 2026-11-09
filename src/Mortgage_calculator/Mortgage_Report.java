@@ -1,14 +1,14 @@
-package mortgage_calculator;
+package Mortgage_calculator;
 
 import java.text.NumberFormat;
 
-public class mortgage_report {
+public class Mortgage_Report {
 
     private final NumberFormat currency;
-    private mortgage_calculations calculator;
+    private Mortgage_Calculations calculator;
 
 
-    public mortgage_report(mortgage_calculations calculator) {
+    public Mortgage_Report(Mortgage_Calculations calculator) {
         this.calculator = calculator;
         currency = NumberFormat.getCurrencyInstance();
     }

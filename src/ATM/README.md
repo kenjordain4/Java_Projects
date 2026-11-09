@@ -6,9 +6,9 @@ A Java project that simulates different payment methods (credit card, PayPal, cr
 
 - `Payment`: base class with a `pay()` method and an empty `render()` method that subclasses override.
 - `PaymentService`: interface that defines the `pay()` method every payment method must implement.
-- `creditCardPayment`: extends `Payment` and implements `PaymentService`. Pays by credit card and validates the card.
-- `paypalPayment`: extends `Payment` and implements `PaymentService`. Pays with PayPal and sends a receipt.
-- `cryptoPayment`: extends `Payment` and implements `PaymentService`. Pays with crypto and verifies the blockchain.
+- `CreditCardPayment`: extends `Payment` and implements `PaymentService`. Pays by credit card and validates the card.
+- `PaypalPayment`: extends `Payment` and implements `PaymentService`. Pays with PayPal and sends a receipt.
+- `CryptoPayment`: extends `Payment` and implements `PaymentService`. Pays with crypto and verifies the blockchain.
 - `OrderService`: processes an order using any object that implements `PaymentService`.
 - `Atm_main`: main class that creates the different payments and runs them.
 

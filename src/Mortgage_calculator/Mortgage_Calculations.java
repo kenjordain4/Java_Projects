@@ -1,15 +1,15 @@
-package mortgage_calculator;
+package Mortgage_calculator;
 
 import java.text.NumberFormat;
 
-public class mortgage_calculations {
+public class Mortgage_Calculations {
     private static final int PERCENT = 100;
     private static final int MONTHS_IN_YEAR = 12;
     private int principal;
     private float annualInterest;
     private int years;
 
-    public mortgage_calculations(int principal, float annualInterest, int years) {
+    public Mortgage_Calculations(int principal, float annualInterest, int years) {
         this.principal = principal;
         this.annualInterest = annualInterest;
         this.years = years;

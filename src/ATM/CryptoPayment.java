@@ -1,6 +1,6 @@
 package ATM;
 
-public class cryptoPayment extends Payment implements PaymentService{
+public class CryptoPayment extends Payment implements PaymentService{
     @Override
     public void pay() {
         System.out.println("Paying with crypto\n" +
