@@ -14,7 +14,7 @@ A Java project that simulates different payment methods (credit card, PayPal, cr
 
 ## How it works
 
-- Each payment type overrides `render()` to do its own action (validate the card, send a receipt, or pay with crypto). The `Process(Payment payment)` method in the main class accepts any `Payment`, so the right version of `render()` runs depending on the object (polymorphism).
+- Each payment type overrides `render()` to do its own action (validate the card, send a receipt, or pay with crypto). The `process(Payment payment)` method in `Main` accepts any `Payment`, so the right version of `render()` runs depending on the object (polymorphism).
 - `OrderService` receives a `PaymentService` in its constructor and calls `pay()`. It does not need to know which payment method is used, so new methods can be added without changing it (dependency injection).
 
 ## How to run
@@ -22,11 +22,11 @@ A Java project that simulates different payment methods (credit card, PayPal, cr
 1. Open the project in an IDE such as IntelliJ IDEA.
 2. Run the `main` method in `Main`.
 
-Or from the terminal, in the folder that contains the `ATM` package:
+Or from the terminal, in the `src` folder (the one that contains the `payment_system` package):
 
 ```
-javac Payment_System/*.java
-java ATM.Main
+javac payment_system/*.java
+java payment_system.Main
 ```
 
 ## Concepts practiced
